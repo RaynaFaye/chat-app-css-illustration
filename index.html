@@ -13,32 +13,41 @@
   <body>
     <div></div>
     <!-- Chat app illustration block -->
-    <div>
-      <div>
-        <div></div>
+    <div class="chat-app__container">
+      <div class="chat-app__header">
         <div>
-          <img src="images/avatar.jpg" alt="" />
+          <img src="images/icon-arrow-left.svg" alt="" class="chat-app__header-icon" />
+        </div>
+        <div>
+          <img src="images/avatar.jpg" alt="" class="chat-app__header__avatar" />
         </div>
         <div>
           <p>Samuel Green</p>
           <p>Available to Walk</p>
         </div>
-        <div></div>
-      </div>
-      <div>
-        <p>That sounds great. I’d be happy with that.</p>
-        <p>Could you send over some pictures of your dog, please?</p>
         <div>
-          <img src="images/dog-image-1.jpg" alt="" />
-          <img src="images/dog-image-2.jpg" alt="" />
-          <img src="images/dog-image-3.jpg" alt="" />
+          <img src="images/icon-dots.svg" alt="" class="chat-app__header-icon" />
         </div>
-        <p>Here are a few pictures. She’s a happy girl!</p>
-        <p>Can you make it?</p>
-        <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-        <p><span></span>30 minute walk <span>$29</span></p>
-        <p><span></span>1 hour walk <span>$49</span></p>
-        <p>Type a message… <span></span></p>
+      </div>
+      <div class="chat-app__core">
+        <p class="chat-app__core__text-left">That sounds great. I’d be happy with that.</p>
+        <p class="chat-app__core__text-left">Could you send over some pictures of your dog, please?</p>
+        <div>
+          <img src="images/dog-image-1.jpg" alt="" class="chat-app__core__image" />
+          <img src="images/dog-image-2.jpg" alt="" class="chat-app__core__image" />
+          <img src="images/dog-image-3.jpg" alt="" class="chat-app__core__image" />
+        </div>
+        <p class="chat-app__core__text-right">Here are a few pictures. She’s a happy girl!</p>
+        <p class="chat-app__core__text-right">Can you make it?</p>
+        <p class="chat-app__core__text-left">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+        <p class="chat-app__core__prices"><span class="prices__radio-button"></span>30 minute walk <span>$29</span></p>
+        <p class="chat-app__core__prices"><span class="prices__radio-button"></span>1 hour walk <span>$49</span></p>
+        <p class="chat-app__core__input">
+          Type a message…
+          <span class="chat-app__core__input-button"
+            ><img src="images/icon-arrow-right.svg" alt="" / class="chat-app__core__input-button__image"></span
+          >
+        </p>
       </div>
     </div>
     <!-- End chat app illustration block -->

@@ -1,4 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+}
+/* Chat app illustration block */
+.chat-app__container {
+  width: 300px;
+  border: 10px solid #ffffff;
+}
+/* Header */
+.chat-app__header {
+  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  display: flex;
+}
+.chat-app__header-icon {
+  width: 25px;
+}
+.chat-app__header__avatar {
+  width: 30px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+/* Core */
+.chat-app__core {
+  background: hsl(270, 20%, 96%);
+  padding: 10px;
+}
+.chat-app__core__image {
+  width: 50px;
+  border-radius: 10px;
+}
+.chat-app__core__text-left {
+  background: hsl(270, 62%, 95%);
+  color: hsl(276, 55%, 52%);
+  border-radius: 10px;
+}
+.chat-app__core__text-right {
+  background: #ffffff;
+  color: hsl(271, 15%, 43%);
+  border-radius: 10px;
+}
+.chat-app__core__prices {
+  background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  color: #ffffff;
+  border-radius: 10px 10px 10px 5px;
+}
+.prices__radio-button {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid hsl(289, 100%, 72%);
+  border-radius: 50%;
+}
+.chat-app__core__input {
+  background: #ffffff;
+  color: hsl(206, 6%, 79%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 7px 7px 7px 25px;
+  border-radius: 34px;
+}
+.chat-app__core__input-button {
+  background: hsl(271, 36%, 24%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.chat-app__core__input-button__image {
+  width: 20px;
+  margin: auto;
+}
 
 /* Attribution section */
 .attribution {
