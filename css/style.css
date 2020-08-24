@@ -10,6 +10,7 @@ body {
   width: 295px;
   border: 10px solid #ffffff;
   border-radius: 30px;
+  box-shadow: 0 25px 20px -10px #cccccc;
 }
 /* Header */
 .chat-app__header {
@@ -130,7 +131,21 @@ body {
   width: 20px;
   margin: auto;
 }
-
+/* Main content */
+.main {
+  text-align: center;
+  padding: 30px;
+}
+.main__title {
+  color: hsl(271, 36%, 24%);
+  font-size: 40px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.main__text {
+  color: hsl(270, 7%, 64%);
+  line-height: 1.7;
+}
 /* Attribution section */
 .attribution {
   font-size: 11px;
