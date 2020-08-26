@@ -181,3 +181,81 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Media Queries */
+@media all and (min-width: 500px) {
+  .dark-purple-block {
+    left: -20%;
+  }
+  .light-purple-block {
+    right: -20%;
+  }
+}
+@media all and (min-width: 728px) {
+  .dark-purple-block {
+    left: -8%;
+  }
+  .light-purple-block {
+    right: -8%;
+  }
+}
+@media all and (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 15% 75px 1fr 2fr 75px 15%;
+    grid-template-rows: 100px 1fr 100px;
+  }
+  .background-block {
+    width: 575px;
+    height: 770px;
+    position: relative;
+  }
+  .dark-purple-block {
+    border-radius: 0 0 500px 500px;
+    left: 0;
+    grid-column: 1 / 3;
+    grid-row: 1 / -1;
+    align-self: start;
+    margin-left: -140%;
+  }
+  .light-purple-block {
+    border-radius: 500px 500px 0 0;
+    right: 0;
+    grid-column: 5/ -1;
+    grid-row: 1 / 4;
+    align-self: end;
+    margin-right: -30%;
+  }
+  /* Chat app illustration block */
+  .chat-app__container {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    margin-top: 0;
+  }
+  /* Main content */
+  .main {
+    padding: 30px 0px 30px 95px;
+    grid-column: 4 /6;
+    grid-row: 2;
+    text-align: left;
+  }
+  /* Attribution section */
+  .attribution {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    align-self: end;
+  }
+}
+@media all and (min-width: 1100px) {
+  .container {
+    grid-template-columns: 25% 75px 1fr 2fr 75px 1fr;
+  }
+  .dark-purple-block {
+    margin-left: -30%;
+  }
+}
+@media all and (min-width: 1600px) {
+  .dark-purple-block {
+    margin-left: -5%;
+  }
+}
