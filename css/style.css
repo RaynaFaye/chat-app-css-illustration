@@ -38,6 +38,7 @@ body {
   border-radius: 30px;
   box-shadow: 0 25px 20px -10px #cccccc;
   margin-top: 50px;
+  overflow: hidden;
 }
 /* Header */
 .chat-app__header {
@@ -90,6 +91,7 @@ body {
 .chat-app__core__image-block {
   align-self: flex-end;
   margin: 5px 0;
+  transform: translateX(120%);
 }
 .chat-app__core__image:nth-child(1),
 .chat-app__core__image:nth-child(2) {
@@ -108,12 +110,14 @@ body {
 .chat-app__core__text-left {
   background: hsl(270, 62%, 95%);
   color: hsl(276, 55%, 52%);
+  transform: translateX(-120%);
 }
 .chat-app__core__text-right {
   background: #ffffff;
   color: hsl(271, 15%, 43%);
   border-radius: 10px 10px 5px 10px;
   align-self: flex-end;
+  transform: translateX(120%);
 }
 .chat-app__core__prices {
   background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
@@ -121,6 +125,7 @@ body {
   display: grid;
   grid-template-columns: 30px auto auto;
   align-items: center;
+  transform: translateX(-120%);
 }
 .prices__radio-button {
   display: inline-block;
@@ -157,6 +162,47 @@ body {
 .chat-app__core__input-button__image {
   width: 20px;
   margin: auto;
+}
+/* Animations of items on load */
+.chat-app__item1 {
+  animation: slideinleft 1s ease-in forwards;
+}
+.chat-app__item2 {
+  animation: slideinleft 1s 1s ease-in forwards;
+}
+.chat-app__item3 {
+  animation: slideinright 1s 2s ease-in forwards;
+}
+.chat-app__item4 {
+  animation: slideinright 1s 3s ease-in forwards;
+}
+.chat-app__item5 {
+  animation: slideinright 1s 4s ease-in forwards;
+}
+.chat-app__item6 {
+  animation: slideinleft 1s 5s ease-in forwards;
+}
+.chat-app__item7 {
+  animation: slideinleft 1s 6s ease-in forwards;
+}
+.chat-app__item8 {
+  animation: slideinleft 1s 7s ease-in forwards;
+}
+@keyframes slideinleft {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideinright {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 /* Main content */
 .main {
